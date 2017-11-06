@@ -1,0 +1,51 @@
+welcome: # this is the #welcome bloc referenced in index.js
+  - typing: true
+    wait: 2s
+    text: # Picks one randomly 
+      - Hello! What is your name?
+      - Hi! What is your name?
+
+give_name:
+  - typing: true
+    wait: 2s
+    text: # Picks one randomly 
+      - Is your name {{name}}?
+      - Can I call you {{name}}?
+
+affirm:
+  - typing: true
+    wait: 2s
+    text: # Picks one randomly 
+      - Alright!
+      - Great!
+      - I am amazing!
+
+goodbye:
+  - typing: true
+    wait: 2s
+    text:
+      - Bye!
+      - Goodbye!
+      - Feel free to talk to me again!
+      - See you soon!
+      - Byebye!
+
+not_understand:
+  - typing: true
+    wait: 2s
+    text:
+      - Sorry, I do not understand what you mean. Can you try again?
+      - Sorry, what you are saying is beyond my capabilities right now.
+      - I.. do not understand.
+
+rude_remark:
+  - typing: true
+    wait: 2s
+    text:
+      - Hey! That wasn't nice.
+      - I'm gonna tell your mommy.
+
+unit_result:
+  - typeing: true
+    text:
+      - {{rs}}
